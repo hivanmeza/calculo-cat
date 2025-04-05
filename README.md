@@ -4,7 +4,7 @@ Este proyecto define la metodología para el cálculo del CAT (Costo Anual Total
 
 ## Estructura del Proyecto
 
-El proyecto está organizado en los siguientes documentos:
+El proyecto está organizado en los siguientes documentos y carpetas:
 
 ### 1. Definición del Cálculo del CAT
 
@@ -46,6 +46,16 @@ Este documento describe el marco regulatorio en México:
 - Componentes obligatorios en el cálculo
 - Requisitos de divulgación
 - Comparación con estándares internacionales
+
+### 5. Ejemplos de Código del CAT
+
+[Ejemplos de Código del CAT](./ejemplos/README.md)
+
+Esta carpeta contiene implementaciones prácticas de los algoritmos:
+- Ejemplos de código para diferentes tipos de crédito
+- Implementaciones de las fórmulas y métodos numéricos
+- Casos de uso con valores de muestra
+- Visualización de resultados
 
 ## Próximos Pasos
 
