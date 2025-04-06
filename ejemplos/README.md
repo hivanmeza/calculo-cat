@@ -8,11 +8,11 @@ Los ejemplos están organizados por lenguaje de programación y tipo de crédito
 
 ### Lenguajes de Programación
 
-- [`python/`](./python/): Implementaciones en Python
-- [`go/`](./go/): Implementaciones en Go
-- [`javascript/`](./javascript/): Implementaciones en JavaScript
-- [`csharp/`](./csharp/): Implementaciones en C#
-- [`sqlserver/`](./sqlserver/): Implementaciones en SQL Server
+- [📁 `python/`](./python/): Implementaciones en Python
+- [📁 `go/`](./go/): Implementaciones en Go
+- [📁 `javascript/`](./javascript/): Implementaciones en JavaScript
+- [📁 `csharp/`](./csharp/): Implementaciones en C#
+- [📁 `sqlserver/`](./sqlserver/): Implementaciones en SQL Server
 
 ### Tipos de Crédito por Lenguaje
 

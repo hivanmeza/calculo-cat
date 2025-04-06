@@ -8,7 +8,7 @@ El proyecto está organizado en los siguientes documentos y carpetas:
 
 ### 1. Definición del Cálculo del CAT
 
-[Definición del Cálculo del CAT](./docs/definicion_calculo_cat.md)
+[📄 Definición del Cálculo del CAT](./docs/definicion_calculo_cat.md)
 
 Este documento establece los fundamentos conceptuales del CAT, incluyendo:
 - Componentes principales (tipos de pago, plazos, comisiones, garantías)
@@ -17,7 +17,7 @@ Este documento establece los fundamentos conceptuales del CAT, incluyendo:
 
 ### 2. Casos de Uso del CAT
 
-[Casos de Uso del CAT](./docs/casos_uso_cat.md)
+[📄 Casos de Uso del CAT](./docs/casos_uso_cat.md)
 
 Este documento presenta ejemplos prácticos de cálculo del CAT para diferentes escenarios:
 - Préstamos personales
@@ -29,7 +29,7 @@ Este documento presenta ejemplos prácticos de cálculo del CAT para diferentes 
 
 ### 3. Algoritmos para el Cálculo del CAT
 
-[Algoritmos para el Cálculo del CAT](./docs/algoritmos_calculo_cat.md)
+[📄 Algoritmos para el Cálculo del CAT](./docs/algoritmos_calculo_cat.md)
 
 Este documento detalla los algoritmos y fórmulas matemáticas específicas:
 - Fundamentos matemáticos
@@ -39,7 +39,7 @@ Este documento detalla los algoritmos y fórmulas matemáticas específicas:
 
 ### 4. Regulaciones y Normativas del CAT
 
-[Regulaciones y Normativas del CAT](./docs/regulaciones_cat.md)
+[📄 Regulaciones y Normativas del CAT](./docs/regulaciones_cat.md)
 
 Este documento describe el marco regulatorio en México:
 - Normativas del Banco de México y CONDUSEF
@@ -49,7 +49,7 @@ Este documento describe el marco regulatorio en México:
 
 ### 5. Ejemplos de Código del CAT
 
-[Ejemplos de Código del CAT](./ejemplos/README.md)
+[📄 Ejemplos de Código del CAT](./ejemplos/README.md)
 
 Esta carpeta contiene implementaciones prácticas de los algoritmos:
 - Ejemplos de código para diferentes tipos de crédito
