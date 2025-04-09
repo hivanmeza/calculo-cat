@@ -50,6 +50,8 @@ Se incluyen las garantías en efectivo que el Cliente esté obligado a constitui
 
 Para el cálculo, el monto total de la garantía se incluirá en la variable (Bk) al momento de su constitución, y al liberarse, se incluirá con signo negativo en la misma variable.
 
+> **Nota**: Para una implementación detallada de esta metodología, consulte el documento [Garantías en Efectivo y su Impacto en el Cálculo del CAT](./garantias_efectivo_cat.md).
+
 #### 2.2.2 Comisiones Opcionales para Tasas Preferenciales
 
 Se incluyen las Comisiones cuyos pagos sean opcionales para los Clientes pero que las Entidades requieran como condición para acceder a tasas de interés preferenciales.

@@ -57,7 +57,17 @@ Este documento describe el marco regulatorio en México:
 - Requisitos de divulgación
 - Comparación con estándares internacionales
 
-### 5. Ejemplos de Código del CAT
+### 6. Garantías en Efectivo y su Impacto en el CAT
+
+[📄 Garantías en Efectivo y su Impacto en el CAT](./docs/garantias_efectivo_cat.md)
+
+Este documento detalla cómo se deben considerar las garantías en efectivo en el cálculo del CAT:
+- Definición y tipos de garantías incluidas
+- Metodología para incluir garantías en el cálculo
+- Casos especiales (rendimientos variables, liberaciones parciales)
+- Impacto en el CAT y ejemplos de implementación
+
+### 7. Ejemplos de Código del CAT
 
 [📄 Ejemplos de Código del CAT](./ejemplos/README.md)
 
