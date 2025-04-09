@@ -40,14 +40,16 @@ namespace CalculoCAT
             // Monto neto recibido (descontando comisiones y otros costos iniciales)
             double montoNeto = montoCredito - comisionApertura - otrosCostos;
             
-            // Flujos de efectivo (valor negativo para salidas, positivo para entradas)
+            // Flujos de efectivo (desde la perspectiva de la institución financiera)
+            // Valor negativo para desembolsos (dinero que sale de la institución)
+            // Valor positivo para ingresos (dinero que entra a la institución)
             double[] flujos = new double[plazoMeses + 1];
-            flujos[0] = montoNeto;  // Flujo inicial (dinero recibido)
+            flujos[0] = -montoNeto;  // Flujo inicial (dinero desembolsado por la institución)
             
-            // Agregar pagos mensuales (salidas de dinero)
+            // Agregar pagos mensuales (entradas de dinero para la institución)
             for (int i = 1; i <= plazoMeses; i++)
             {
-                flujos[i] = -(pagoMensual + comisionesMensuales + seguro);
+                flujos[i] = pagoMensual + comisionesMensuales + seguro;
             }
             
             // Calcular el CAT usando el método de Newton-Raphson
