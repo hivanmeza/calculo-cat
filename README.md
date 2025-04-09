@@ -37,7 +37,17 @@ Este documento detalla los algoritmos y fórmulas matemáticas específicas:
 - Pseudocódigo para implementación
 - Consideraciones de optimización y precisión
 
-### 4. Regulaciones y Normativas del CAT
+### 4. Cálculo del CAT para Créditos Revolventes
+
+[📄 Cálculo del CAT para Créditos Revolventes](./docs/creditos_revolventes_cat.md)
+
+Este documento detalla la metodología específica para calcular el CAT en créditos revolventes:
+- Definición de crédito revolvente según Circular 9/2015
+- Supuestos específicos para el cálculo
+- Montos estandarizados para publicidad
+- Ejemplos prácticos para tarjetas de crédito
+
+### 5. Regulaciones y Normativas del CAT
 
 [📄 Regulaciones y Normativas del CAT](./docs/regulaciones_cat.md)
 

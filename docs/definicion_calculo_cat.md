@@ -98,6 +98,8 @@ Este documento define la metodología para calcular el CAT en diferentes escenar
   - Presentación de CAT para el periodo inicial y escenarios futuros
 
 ## 2. Metodología de Cálculo
+
+> **Nota**: Para la metodología específica del cálculo del CAT en créditos revolventes (tarjetas de crédito), consulte el documento [Cálculo del CAT para Créditos Revolventes](./creditos_revolventes_cat.md).
 ### 2.1 Enfoque General
 
 1. **Identificar todos los flujos de efectivo**:

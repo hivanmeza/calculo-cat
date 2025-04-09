@@ -4,6 +4,8 @@ Este documento complementa la definición del cálculo del CAT, presentando caso
 
 ## 1. Préstamos Personales
 
+> **Nota**: Para casos de uso específicos relacionados con créditos revolventes (tarjetas de crédito), consulte el documento [Cálculo del CAT para Créditos Revolventes](./creditos_revolventes_cat.md).
+
 ### Caso 1.1: Préstamo de Nómina
 
 **Características:**

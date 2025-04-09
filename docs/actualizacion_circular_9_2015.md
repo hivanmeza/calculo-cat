@@ -93,6 +93,8 @@ Estos montos deben actualizarse a partir del primer día hábil bancario de ener
 - Se debe considerar un plazo fijo de 36 meses para todos los Créditos Revolventes
 - Se debe asumir que el cliente solo realiza el Pago Mínimo en cada período
 
+> **Nota**: Para una implementación detallada de esta metodología, consulte el documento [Cálculo del CAT para Créditos Revolventes](./creditos_revolventes_cat.md).
+
 ### 4.2 Para la Publicidad y Propaganda
 
 - Los montos de línea de crédito ahora se expresan en UDIS y deben actualizarse anualmente

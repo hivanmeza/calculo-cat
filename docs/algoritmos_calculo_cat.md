@@ -2,6 +2,8 @@
 
 Este documento detalla los algoritmos y fórmulas matemáticas específicas para implementar el cálculo del CAT (Costo Anual Total) en diferentes escenarios financieros.
 
+> **Nota**: Para los algoritmos específicos del cálculo del CAT en créditos revolventes (tarjetas de crédito), consulte el documento [Cálculo del CAT para Créditos Revolventes](./creditos_revolventes_cat.md).
+
 ## 1. Fundamentos Matemáticos
 
 ### 1.1 Ecuación Básica del CAT

@@ -31,7 +31,7 @@ Cada carpeta de lenguaje contiene ejemplos para los siguientes tipos de crédito
    - Cálculo para hipotecas de tasa variable
 
 4. **Tarjetas de Crédito**
-   - Implementación para líneas de crédito revolventes
+   - Implementación para líneas de crédito revolventes (ver [documentación detallada](../docs/creditos_revolventes_cat.md))
    - Cálculo para compras a meses sin intereses
 
 5. **Microcréditos**
