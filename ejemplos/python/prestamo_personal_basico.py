@@ -38,12 +38,14 @@ def calcular_cat(monto_credito, plazo_meses, tasa_interes_anual, comision_apertu
     # Monto neto recibido (descontando comisiones y otros costos iniciales)
     monto_neto = monto_credito - comision_apertura - otros_costos
     
-    # Flujos de efectivo (valor negativo para salidas, positivo para entradas)
-    flujos = [monto_neto]  # Flujo inicial (dinero recibido)
+    # Flujos de efectivo (desde la perspectiva de la institución financiera)
+    # Valor negativo para desembolsos (dinero que sale de la institución)
+    # Valor positivo para ingresos (dinero que entra a la institución)
+    flujos = [-monto_neto]  # Flujo inicial (dinero desembolsado por la institución)
     
-    # Agregar pagos mensuales (salidas de dinero)
+    # Agregar pagos mensuales (entradas de dinero para la institución)
     for _ in range(plazo_meses):
-        flujos.append(-(pago_mensual + comisiones_mensuales + seguro))
+        flujos.append(pago_mensual + comisiones_mensuales + seguro)
     
     # Calcular el CAT usando el método de Newton-Raphson
     cat = calcular_tir(flujos) * 12 * 100  # Convertir a porcentaje anual

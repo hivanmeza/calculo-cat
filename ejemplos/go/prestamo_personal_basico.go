@@ -35,12 +35,14 @@ func CalcularCAT(montoCredito, plazoMeses, tasaInteresAnual, comisionApertura, c
 	// Monto neto recibido (descontando comisiones y otros costos iniciales)
 	montoNeto := montoCredito - comisionApertura - otrosCostos
 
-	// Flujos de efectivo (valor negativo para salidas, positivo para entradas)
-	flujos := []float64{montoNeto} // Flujo inicial (dinero recibido)
+	// Flujos de efectivo (desde la perspectiva de la institución financiera)
+	// Valor negativo para desembolsos (dinero que sale de la institución)
+	// Valor positivo para ingresos (dinero que entra a la institución)
+	flujos := []float64{-montoNeto} // Flujo inicial (dinero desembolsado por la institución)
 
-	// Agregar pagos mensuales (salidas de dinero)
+	// Agregar pagos mensuales (entradas de dinero para la institución)
 	for i := 0; i < int(plazoMeses); i++ {
-		flujos = append(flujos, -(pagoMensual + comisionesMensuales + seguro))
+		flujos = append(flujos, pagoMensual + comisionesMensuales + seguro)
 	}
 
 	// Calcular el CAT usando el método de Newton-Raphson

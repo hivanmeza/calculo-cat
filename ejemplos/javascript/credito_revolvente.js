@@ -30,8 +30,10 @@ function calcularCATRevolvente(montoLineaCredito, tasaInteresAnual, comisionAnua
     // 3. Cliente vuelve a disponer del monto disponible después de cada pago
     // 4. Intereses, pago mínimo y nuevas disposiciones se generan al final del periodo
     
-    // Flujos de efectivo (valor negativo para salidas, positivo para entradas)
-    const flujos = [montoLineaCredito];  // Flujo inicial (dinero recibido)
+    // Flujos de efectivo (desde la perspectiva de la institución financiera)
+    // Valor negativo para desembolsos (dinero que sale de la institución)
+    // Valor positivo para ingresos (dinero que entra a la institución)
+    const flujos = [-montoLineaCredito];  // Flujo inicial (dinero desembolsado por la institución)
     
     // Saldo inicial = monto total de la línea
     let saldo = montoLineaCredito;
@@ -66,10 +68,10 @@ function calcularCATRevolvente(montoLineaCredito, tasaInteresAnual, comisionAnua
             saldo += nuevaDisposicion;
         }
         
-        // Agregar flujo negativo (pago) y flujo positivo (nueva disposición)
-        flujos.push(-pagoTotal);
+        // Agregar flujo positivo (pago recibido por la institución) y flujo negativo (nueva disposición)
+        flujos.push(pagoTotal);
         if (nuevaDisposicion > 0) {
-            flujos.push(nuevaDisposicion);
+            flujos.push(-nuevaDisposicion);
         }
     }
     

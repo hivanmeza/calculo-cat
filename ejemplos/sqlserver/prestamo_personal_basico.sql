@@ -200,16 +200,20 @@ BEGIN
     -- Limpiar flujos de efectivo anteriores
     DELETE FROM dbo.FlujosEfectivo WHERE PrestamoID = @PrestamoID;
     
-    -- Insertar flujo inicial (dinero recibido)
-    INSERT INTO dbo.FlujosEfectivo (PrestamoID, Periodo, Monto)
-    VALUES (@PrestamoID, 0, @MontoNeto);
+    -- Flujos de efectivo (desde la perspectiva de la institución financiera)
+    -- Valor negativo para desembolsos (dinero que sale de la institución)
+    -- Valor positivo para ingresos (dinero que entra a la institución)
     
-    -- Insertar pagos mensuales (salidas de dinero)
+    -- Insertar flujo inicial (dinero desembolsado por la institución)
+    INSERT INTO dbo.FlujosEfectivo (PrestamoID, Periodo, Monto)
+    VALUES (@PrestamoID, 0, -@MontoNeto);
+    
+    -- Insertar pagos mensuales (entradas de dinero para la institución)
     DECLARE @i INT = 1;
     WHILE @i <= @PlazoMeses
     BEGIN
         INSERT INTO dbo.FlujosEfectivo (PrestamoID, Periodo, Monto)
-        VALUES (@PrestamoID, @i, -(@PagoMensual + @ComisionesMensuales + @Seguro));
+        VALUES (@PrestamoID, @i, @PagoMensual + @ComisionesMensuales + @Seguro);
         
         SET @i = @i + 1;
     END;

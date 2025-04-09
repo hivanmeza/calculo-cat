@@ -39,8 +39,10 @@ def calcular_cat_revolvente(monto_linea_credito, tasa_interes_anual, comision_an
     # 3. Cliente vuelve a disponer del monto disponible después de cada pago
     # 4. Intereses, pago mínimo y nuevas disposiciones se generan al final del periodo
     
-    # Flujos de efectivo (valor negativo para salidas, positivo para entradas)
-    flujos = [monto_linea_credito]  # Flujo inicial (dinero recibido)
+    # Flujos de efectivo (desde la perspectiva de la institución financiera)
+    # Valor negativo para desembolsos (dinero que sale de la institución)
+    # Valor positivo para ingresos (dinero que entra a la institución)
+    flujos = [-monto_linea_credito]  # Flujo inicial (dinero desembolsado por la institución)
     
     # Saldo inicial = monto total de la línea
     saldo = monto_linea_credito
@@ -74,10 +76,10 @@ def calcular_cat_revolvente(monto_linea_credito, tasa_interes_anual, comision_an
             # Actualizar saldo con nueva disposición
             saldo += nueva_disposicion
         
-        # Agregar flujo negativo (pago) y flujo positivo (nueva disposición)
-        flujos.append(-pago_total)
+        # Agregar flujo positivo (pago recibido por la institución) y flujo negativo (nueva disposición)
+        flujos.append(pago_total)
         if nueva_disposicion > 0:
-            flujos.append(nueva_disposicion)
+            flujos.append(-nueva_disposicion)
     
     # Calcular el CAT usando el método de Newton-Raphson
     cat = calcular_tir(flujos) * 12 * 100  # Convertir a porcentaje anual

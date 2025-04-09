@@ -29,12 +29,14 @@ function calcularCAT(montoCredito, plazoMeses, tasaInteresAnual, comisionApertur
     // Monto neto recibido (descontando comisiones y otros costos iniciales)
     const montoNeto = montoCredito - comisionApertura - otrosCostos;
     
-    // Flujos de efectivo (valor negativo para salidas, positivo para entradas)
-    const flujos = [montoNeto];  // Flujo inicial (dinero recibido)
+    // Flujos de efectivo (desde la perspectiva de la institución financiera)
+    // Valor negativo para desembolsos (dinero que sale de la institución)
+    // Valor positivo para ingresos (dinero que entra a la institución)
+    const flujos = [-montoNeto];  // Flujo inicial (dinero desembolsado por la institución)
     
-    // Agregar pagos mensuales (salidas de dinero)
+    // Agregar pagos mensuales (entradas de dinero para la institución)
     for (let i = 0; i < plazoMeses; i++) {
-        flujos.push(-(pagoMensual + comisionesMensuales + seguro));
+        flujos.push(pagoMensual + comisionesMensuales + seguro);
     }
     
     // Calcular el CAT usando el método de Newton-Raphson
