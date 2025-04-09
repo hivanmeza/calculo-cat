@@ -61,21 +61,23 @@ VPN = F₀ + Σ[Fᵢ / (1 + CAT)^(tᵢ)] = 0
 ```
 
 Donde:
-- F₀ es el flujo inicial (disposición total de la línea de crédito)
-- Fᵢ son los flujos posteriores (pagos mínimos, comisiones y nuevas disposiciones)
+- F₀ es el flujo inicial (desde la perspectiva de la institución financiera, la disposición total de la línea de crédito con signo negativo)
+- Fᵢ son los flujos posteriores (desde la perspectiva de la institución financiera, los pagos mínimos y comisiones recibidos con signo positivo, y las nuevas disposiciones otorgadas con signo negativo)
 - tᵢ es el tiempo en años desde el inicio hasta el flujo i
 - CAT es la tasa efectiva anual que estamos buscando (expresada en forma decimal)
+
+> **Nota importante sobre los signos**: La convención de signos debe reflejar la perspectiva de la institución financiera que otorga el crédito. Esto significa que los desembolsos (dinero que sale de la institución) deben tener signo negativo, mientras que los ingresos (dinero que entra a la institución) deben tener signo positivo.
 
 ### 3.2 Flujos Específicos para Créditos Revolventes
 
 1. **Flujo Inicial (F₀)**:
-   - Disposición total de la línea de crédito (valor positivo)
+   - Disposición total de la línea de crédito (valor negativo desde la perspectiva de la institución financiera)
 
 2. **Flujos Posteriores (Fᵢ)**:
-   - **Pagos Mínimos**: Valor negativo, calculado según las políticas de la entidad (generalmente un porcentaje del saldo)
-   - **Comisión Anual**: Valor negativo, aplicado al final del primer periodo de cada año
-   - **Nuevas Disposiciones**: Valor positivo, equivalente a la parte del pago mínimo que amortiza capital (no intereses)
-   - **Pago Final**: Valor negativo, incluye la liquidación del saldo restante al final del mes 36
+   - **Pagos Mínimos**: Valor positivo desde la perspectiva de la institución financiera, calculado según las políticas de la entidad (generalmente un porcentaje del saldo)
+   - **Comisión Anual**: Valor positivo desde la perspectiva de la institución financiera, aplicado al final del primer periodo de cada año
+   - **Nuevas Disposiciones**: Valor negativo desde la perspectiva de la institución financiera, equivalente a la parte del pago mínimo que amortiza capital (no intereses)
+   - **Pago Final**: Valor positivo desde la perspectiva de la institución financiera, incluye la liquidación del saldo restante al final del mes 36
 
 ## 4. Implementación Práctica
 

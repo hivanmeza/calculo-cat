@@ -6,6 +6,8 @@ Este documento define la metodología para calcular el CAT en diferentes escenar
 
 ### 1.1 Tipos de Pago
 
+> **Nota importante sobre los signos**: La convención de signos debe reflejar la perspectiva de la institución financiera que otorga el crédito. Esto significa que los desembolsos (dinero que sale de la institución) deben tener signo negativo, mientras que los ingresos (dinero que entra a la institución) deben tener signo positivo.
+
 #### Pago Único
 - **Descripción**: Un solo pago al final del plazo del crédito.
 - **Consideraciones**: El monto total incluye capital e intereses acumulados.

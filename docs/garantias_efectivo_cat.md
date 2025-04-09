@@ -18,11 +18,13 @@ Según el inciso d Bis) del numeral 4.2 de la Circular 9/2015, las garantías en
 
 ### 2.1 Flujos a Considerar
 
-1. **Flujo en la fecha de constitución**: El monto total de la garantía se incluirá en la variable (Bk) en el orden que corresponda al momento de su constitución.
+> **Nota importante sobre los signos**: La convención de signos debe reflejar la perspectiva de la institución financiera que otorga el crédito. Esto significa que los desembolsos (dinero que sale de la institución) deben tener signo negativo, mientras que los ingresos (dinero que entra a la institución) deben tener signo positivo.
 
-2. **Flujo en la fecha de liberación**: Al liberar dicha garantía, se incluirá, con signo negativo, el monto de la garantía en la variable (Bk).
+1. **Flujo en la fecha de constitución**: El monto total de la garantía se incluirá en la variable (Bk) en el orden que corresponda al momento de su constitución. Desde la perspectiva de la institución financiera, este es un ingreso (valor positivo) ya que recibe la garantía del cliente.
 
-3. **Intereses generados**: Se deben incluir, en su caso, los intereses generados durante el periodo que la garantía estuvo constituida.
+2. **Flujo en la fecha de liberación**: Al liberar dicha garantía, se incluirá, con signo negativo desde la perspectiva de la institución financiera, el monto de la garantía en la variable (Bk), ya que representa un desembolso para la institución.
+
+3. **Intereses generados**: Se deben incluir, en su caso, los intereses generados durante el periodo que la garantía estuvo constituida. Estos intereses representan un desembolso para la institución financiera (valor negativo).
 
 ### 2.2 Ejemplo de Aplicación
 
@@ -32,17 +34,17 @@ Según el inciso d Bis) del numeral 4.2 de la Circular 9/2015, las garantías en
 - La garantía se libera al final del plazo del crédito
 - La garantía genera intereses del 2% anual
 
-**Aplicación en el cálculo**:
+**Aplicación en el cálculo desde la perspectiva de la institución financiera**:
 1. En el flujo inicial (t=0):
-   - Disposición del crédito: +$100,000 (variable Aj)
-   - Constitución de la garantía: -$10,000 (variable Bk)
-   - Flujo neto inicial: +$90,000
+   - Disposición del crédito: -$100,000 (variable Aj) - La institución desembolsa el crédito
+   - Constitución de la garantía: +$10,000 (variable Bk) - La institución recibe la garantía
+   - Flujo neto inicial: -$90,000 - Desembolso neto de la institución
 
-2. Durante los 24 meses: Pagos regulares del crédito (variable Bk)
+2. Durante los 24 meses: Pagos regulares del crédito (variable Bk) - Ingresos para la institución (valores positivos)
 
 3. En el flujo final (t=24):
-   - Último pago del crédito (variable Bk)
-   - Liberación de la garantía: +$10,000 + intereses acumulados (variable Bk con signo negativo)
+   - Último pago del crédito (variable Bk) - Ingreso para la institución (valor positivo)
+   - Liberación de la garantía: -$10,000 - intereses acumulados (variable Bk con signo negativo) - La institución devuelve la garantía y los intereses generados
 
 ## 3. Casos Especiales
 

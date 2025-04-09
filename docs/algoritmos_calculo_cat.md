@@ -15,10 +15,12 @@ VPN = F₀ + Σ[Fᵢ / (1 + CAT)^(tᵢ)] = 0
 ```
 
 Donde:
-- F₀ es el flujo inicial (generalmente el monto del crédito con signo positivo menos comisiones con signo negativo)
-- Fᵢ son los flujos posteriores (pagos, con signo negativo)
+- F₀ es el flujo inicial (desde la perspectiva de la institución financiera, el monto del crédito otorgado con signo negativo, y las comisiones iniciales cobradas con signo positivo)
+- Fᵢ son los flujos posteriores (desde la perspectiva de la institución financiera, los pagos recibidos con signo positivo)
 - tᵢ es el tiempo en años desde el inicio hasta el flujo i
 - CAT es la tasa efectiva anual que estamos buscando (expresada en forma decimal)
+
+> **Nota importante sobre los signos**: La convención de signos debe reflejar la perspectiva de la institución financiera que otorga el crédito. Esto significa que los desembolsos (dinero que sale de la institución) deben tener signo negativo, mientras que los ingresos (dinero que entra a la institución) deben tener signo positivo.
 
 ### 1.2 Conversión a Tasa Anual
 
